@@ -1,5 +1,15 @@
 # Sbercloud CSS Terraform module
 
+## How to Configure Terraform for Sbercloud
+
+- [Sbercloud Quickstart](https://cloud.ru/ru/docs/terraform/ug/topics/quickstart.html)
+- Add environment variables for terraform authentication in Sbercloud
+
+```
+export SBC_ACCESS_KEY="xxxx-xxx-xxx"
+export SBC_SECRET_KEY="xxxx-xxx-xxx"
+```
+
 ## Provider configuration
 ```hcl
 provider "sbercloud" {
