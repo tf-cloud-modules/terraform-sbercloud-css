@@ -1,3 +1,5 @@
+**English** | [Русский](README.ru.md)
+
 # Sbercloud CSS Terraform module
 
 ## How to Configure Terraform for Sbercloud
@@ -19,6 +21,9 @@ provider "sbercloud" {
 ```
 
 ## Usage
+
+A runnable configuration is available in [examples/complete](examples/complete).
+
 ```hcl
 module "css" {
     source  = "tf-cloud-modules/css/sbercloud"
@@ -58,15 +63,15 @@ module "css" {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | >= 1.9.0, < 2.0.0 |
+| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | = 1.10.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.10.0 |
+| ---- | ------- |
+| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | = 1.10.0 |
 
 ## Modules
 
@@ -75,13 +80,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
-| [sbercloud_css_cluster.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/latest/docs/resources/css_cluster) | resource |
+| ---- | ---- |
+| [sbercloud_css_cluster.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/1.10.0/docs/resources/css_cluster) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_backup_strategy"></a> [backup\_strategy](#input\_backup\_strategy) | Specifies the advanced backup policy. | `list(any)` | `[]` | no |
 | <a name="input_create"></a> [create](#input\_create) | Controls if resources should be created. | `bool` | `true` | no |
 | <a name="input_engine_type"></a> [engine\_type](#input\_engine\_type) | Engine type. | `string` | `null` | no |
@@ -97,7 +102,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_endpoint"></a> [endpoint](#output\_endpoint) | Indicates the IP address and port number. |
 | <a name="output_id"></a> [id](#output\_id) | Specifies a resource ID in UUID format. |
 | <a name="output_password"></a> [password](#output\_password) | Password of the cluster administrator admin in security mode. |
