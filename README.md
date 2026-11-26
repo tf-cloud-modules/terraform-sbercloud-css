@@ -1,3 +1,5 @@
+**English** | [Русский](README.ru.md)
+
 # Sbercloud CSS Terraform module
 
 ## How to Configure Terraform for Sbercloud
@@ -69,7 +71,7 @@ module "css" {
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.10.0 |
+| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | = 1.10.0 |
 
 ## Modules
 
