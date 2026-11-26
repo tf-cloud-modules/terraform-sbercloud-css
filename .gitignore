@@ -2,6 +2,9 @@
 # Local .terraform directories
 **/.terraform/*
 
+# Terraform lockfiles are not committed for this module.
+**/.terraform.lock.hcl
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
